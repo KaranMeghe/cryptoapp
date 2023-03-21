@@ -19,24 +19,24 @@ const Navbar = () => {
           <Link to="/">CryptoBook</Link>
         </Typography.Title>
         {/* <Button className="menu-control-container"></Button> */}
-        <Menu theme="dark">
-          <Menu.Item icon={<HomeOutlined />}>
-            <Link to="/">Home</Link>
-          </Menu.Item>
-
-          <Menu.Item icon={<FundOutlined />}>
-            <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-          </Menu.Item>
-
-          <Menu.Item icon={<MoneyCollectOutlined />}>
-            <Link to="/exchanges">Exchanges</Link>
-          </Menu.Item>
-
-          <Menu.Item icon={<BulbOutlined />}>
-            <Link to="/news">News</Link>
-          </Menu.Item>
-        </Menu>
       </div>
+      <Menu theme="dark">
+        <Menu.Item key="home" icon={<HomeOutlined />}>
+          <Link to="/">Home</Link>
+        </Menu.Item>
+
+        <Menu.Item key="fund" icon={<FundOutlined />}>
+          <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+        </Menu.Item>
+
+        <Menu.Item key="exchanges" icon={<MoneyCollectOutlined />}>
+          <Link to="/exchanges">Exchanges</Link>
+        </Menu.Item>
+
+        <Menu.Item key="news" icon={<BulbOutlined />}>
+          <Link to="/news">News</Link>
+        </Menu.Item>
+      </Menu>
     </div>
   );
 };

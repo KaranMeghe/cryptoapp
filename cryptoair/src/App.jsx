@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import { Navbar } from "./components";
 
@@ -9,7 +9,11 @@ const App = () => {
         <Navbar />
       </div>
 
-      <div className="main"></div>
+      <div className="main">
+        <Layout>
+          <Outlet />
+        </Layout>
+      </div>
 
       <div className="footer"></div>
     </div>
